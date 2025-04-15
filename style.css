@@ -219,20 +219,6 @@ input:hover {
   background-color: rgb(22, 29, 50);
 }
 
-/* Default (light mode) */
-html {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-  }
-}
-
 @media (max-width: 40rem) {
   :root {
     font-size: 40%;
