@@ -14,7 +14,7 @@
 }
 
 body {
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ header div {
   justify-self: center;
 }
 
-button {
+.search {
   border-radius: 1rem;
   background-color: rgb(61, 85, 241);
   padding: 1rem 1.5rem;
@@ -69,7 +69,7 @@ button {
 }
 
 h1,
-button {
+.search {
   font-weight: 100;
 }
 
@@ -80,6 +80,7 @@ h2 {
 .pfp {
   width: 7rem;
   height: 7rem;
+  border-radius: 4rem;
 }
 
 .userAt {
@@ -183,9 +184,51 @@ input:hover {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   row-gap: 2rem;
+  column-gap: 6rem;
 }
 
 .link-wrapper div {
   display: flex;
   gap: 2rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+.color-wrapper {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.color-wrapper:hover {
+  cursor: pointer;
+  background-color: rgb(36, 47, 80);
+}
+
+.color-wrapper:hover .light {
+  background-color: rgb(36, 47, 80);
+}
+
+.search:hover {
+  cursor: pointer;
+  background-color: rgb(22, 29, 50);
+}
+
+/* Default (light mode) */
+html {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
 }
