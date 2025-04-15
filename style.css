@@ -14,10 +14,10 @@
 }
 
 body {
-  height: 80%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 12rem;
 }
 
 main {
@@ -230,5 +230,11 @@ html {
   html {
     background-color: #1e1e1e;
     color: #e0e0e0;
+  }
+}
+
+@media (max-width: 40rem) {
+  :root {
+    font-size: 40%;
   }
 }
